@@ -1,0 +1,23 @@
+{
+  "name": "iztro-openai-mcp-railway",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remote MCP wrapper for Zi Wei Dou Shu tools, ready for Railway and OpenAI ChatGPT developer mode.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:public": "powershell -ExecutionPolicy Bypass -File ./start-local-public.ps1",
+    "stop:public": "powershell -ExecutionPolicy Bypass -File ./stop-local-public.ps1",
+    "url:public": "powershell -ExecutionPolicy Bypass -File ./get-public-url.ps1",
+    "pack:railway": "powershell -ExecutionPolicy Bypass -File ./pack-railway.ps1"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "dependencies": {
+    "fastmcp": "4.0.0",
+    "iztro": "2.5.8",
+    "lunar-typescript": "1.8.6",
+    "zod": "^3.25.67"
+  }
+}
